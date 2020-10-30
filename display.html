@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        header{
+            height: 100px;
+            border: 2px solid green;
+            background-color: grey;
+        }
+      .box1{
+          height: 100px;
+          width: 200px;
+          /* border: 2px solid red; */
+          display: inline-block;
+      }
+      .box2{
+          float: right;
+      }
+      .logo{
+          width: 99%;
+          border-radius: 50%;
+          padding-top: 25px;
+      }
+      form{
+          margin: 30px;
+          width: 50%;
+          padding: 20px;
+          border: 2px solid red;
+          background-color: honeydew;
+      }
+      input{
+        height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px;
+    outline: none;
+
+      }
+       input:hover{
+           cursor: pointer;
+       }
+       input[type=password]:hover{
+           cursor: not-allowed;
+       }
+    </style>
+</head>
+
+<body>
+   
+    <header>
+   
+<div class="box1">
+    <img class="logo" src="img/logo.png">
+</div>
+<div class="box1 box2">2</div> 
+     
+</header>  
+
+<form>
+    <div>
+            <label>UserName <span>*</span></label>
+            <input type="text">
+    </div>
+    <div>
+            <label>Password <span>*</span></label>
+            <input   readonly type="password">
+    </div>
+  
+</form>
+</body>
+
+</html>

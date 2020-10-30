@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration</title>
+    </head>
+    <body>
+        <h2>Use Registration Page</h2>
+<marquee bgcolor="yellow" direction="right" 
+scrollamount="10">welcome to html class </marquee>
+        <form name="registr"
+         action="register.java"
+         method="GET">
+        <div>
+            <!-- <label>Enter your UserName</label> -->
+            <input type="text" name="username" 
+           placeholder="Enter UserName" tabindex="1"
+            maxlength="8" autofocus  autocomplete="off">
+        </div>
+        <div>
+                <label>email</label>
+                <input  type="email" tabindex="3"  name="email">        
+        </div>  
+        <div>
+                <label>age</label>
+                <input  type="number"  min="18" 
+                max="80" name="age" tabindex="2">        
+        </div>   
+        <div>
+            <label>Mobile:</label>
+            <input type="number"  name="mobile">
+        </div>
+        <div>
+                <label>UploadResume:</label>
+                <input type="file"  name="file">
+            </div>
+            <div>
+                    <label>DOB:</label>
+                    <input type="date"  name="dob">
+                </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" 
+            value="M"> Male
+            <input type="radio" checked name="gender" value="F">Female
+            <input type="radio" name="gender" value="O">others
+        </div>
+<div>
+    <label>Select your course:</label>
+    <input type="checkbox" name="course1" value="java"
+     checked>Java
+    <input type="checkbox" name="course2" 
+    value="jee">Jee
+    <input type="checkbox" name="course3" 
+    value="angular" checked>Angular
+    <input type="checkbox" name="course4"
+     value="react">React
+</div>
+<div>
+    <label>Select place</label>
+    <select name="place">
+        <option>-select-</option>
+        <option value="Hsn">Hassan</option>
+        <option value="Bang" selected>Bangaluru</option>
+        <option value="Shiv">Shivamoga</option>
+        <option value="tmk">Tumakuru</option>
+
+    </select>
+</div>
+<div>
+    <label>Address:</label>
+    <textarea name="address" rows="10" cols="50"></textarea>
+</div>
+
+<audio controls src="file location.mp3"></audio>
+<video controls src="filelocation"></video>
+
+<input type="submit" value="Create Account">
+<input type="reset">
+
+           </form>
+
+
+
+    </body>
+</html>

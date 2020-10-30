@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            z-index: 10;
+            height: 80px;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            background-color: rgb(245, 240, 240);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 10px;
+        }
+
+        .container>div {
+            border: 2px solid green;
+            height: auto;
+            margin: 10px;
+            padding: 2px;
+            width: 20%;
+
+        }
+
+        .img-slider-container,
+        .disp-imgs {
+            position: relative;
+            top: 90px;
+            left: 8%;
+            width: 81%;
+            border: 2px solid gray;
+            height: 270px;
+        }
+
+        .disp-imgs {
+            margin-top: 30px;
+            display: flex;
+        }
+        .disp-imgs > div{
+            margin: 10px;
+        }
+        .img-slider {
+            width: 98%;
+            height: 247px;
+            margin: 13px;
+        }
+
+        .hotel-name {
+            position: absolute;
+            top: 40%;
+            right: 50%;
+            font-size: 5em;
+            font-family: cursive;
+            text-shadow: 10px 9px 2px yellow;
+            color: red;
+            text-align: center;
+        }
+
+        div.gallery,
+        .product-details {
+            width: 19%;
+            height: 98%;
+            border: 3px solid #ccc;
+        }
+
+        div.gallery>img {
+            width: 94%;
+        }
+
+        .product-details {
+            height: 40px;
+            width: 98%;
+            margin-top: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div style="flex-grow: 7;">2</div>
+        <div>3</div>
+    </div>
+    <div class="img-slider-container">
+        <img class="img-slider" src="img/cq5dam.web.756.756.jpeg">
+        <div class="hotel-name">Sathish</div>
+    </div>
+    <div class="disp-imgs">
+        <div class="gallery">
+            <img src="img/71pheYd9W0L._AC_SX466_.jpg">
+            <div class="product-details">imac Pro</div>
+        </div>
+        <div class="gallery">
+                <img src="img/71pheYd9W0L._AC_SX466_.jpg">
+                <div class="product-details">imac Pro</div>
+            </div>
+    </div>
+    <div class="disp-imgs"> </div>
+    <div class="disp-imgs"> </div>
+</body>
+
+</html>
